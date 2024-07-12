@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		477271822C417EDB0048E5B9 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477271812C417EDB0048E5B9 /* OnboardingView.swift */; };
+		477271842C4180DB0048E5B9 /* GetStartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477271832C4180DB0048E5B9 /* GetStartedView.swift */; };
+		477271872C418ED00048E5B9 /* Khula-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 477271862C418ED00048E5B9 /* Khula-Regular.ttf */; };
+		4772718A2C419C090048E5B9 /* Khula-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 477271892C419C090048E5B9 /* Khula-Bold.ttf */; };
+		4772718C2C41A0EB0048E5B9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772718B2C41A0EB0048E5B9 /* LoginView.swift */; };
+		4772718E2C41A10F0048E5B9 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772718D2C41A10F0048E5B9 /* RegisterView.swift */; };
 		47AAEB792C414628006F3583 /* MedcareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AAEB782C414628006F3583 /* MedcareApp.swift */; };
 		47AAEB7D2C41462C006F3583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47AAEB7C2C41462C006F3583 /* Assets.xcassets */; };
 		47AAEB802C41462C006F3583 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47AAEB7F2C41462C006F3583 /* Preview Assets.xcassets */; };
@@ -34,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		477271812C417EDB0048E5B9 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		477271832C4180DB0048E5B9 /* GetStartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedView.swift; sourceTree = "<group>"; };
+		477271862C418ED00048E5B9 /* Khula-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Khula-Regular.ttf"; path = "../../../Downloads/Khula/Khula-Regular.ttf"; sourceTree = "<group>"; };
+		477271882C418F0B0048E5B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		477271892C419C090048E5B9 /* Khula-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Khula-Bold.ttf"; sourceTree = "<group>"; };
+		4772718B2C41A0EB0048E5B9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4772718D2C41A10F0048E5B9 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		47AAEB752C414628006F3583 /* Medcare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medcare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47AAEB782C414628006F3583 /* MedcareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedcareApp.swift; sourceTree = "<group>"; };
 		47AAEB7C2C41462C006F3583 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,10 +107,17 @@
 		47AAEB772C414628006F3583 /* Medcare */ = {
 			isa = PBXGroup;
 			children = (
+				477271882C418F0B0048E5B9 /* Info.plist */,
 				47AAEB782C414628006F3583 /* MedcareApp.swift */,
 				47AAEB7C2C41462C006F3583 /* Assets.xcassets */,
 				47AAEB7E2C41462C006F3583 /* Preview Content */,
 				47AAEBA22C414673006F3583 /* SplashView.swift */,
+				477271812C417EDB0048E5B9 /* OnboardingView.swift */,
+				477271862C418ED00048E5B9 /* Khula-Regular.ttf */,
+				477271892C419C090048E5B9 /* Khula-Bold.ttf */,
+				477271832C4180DB0048E5B9 /* GetStartedView.swift */,
+				4772718B2C41A0EB0048E5B9 /* LoginView.swift */,
+				4772718D2C41A10F0048E5B9 /* RegisterView.swift */,
 			);
 			path = Medcare;
 			sourceTree = "<group>";
@@ -231,6 +251,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				477271872C418ED00048E5B9 /* Khula-Regular.ttf in Resources */,
+				4772718A2C419C090048E5B9 /* Khula-Bold.ttf in Resources */,
 				47AAEB802C41462C006F3583 /* Preview Assets.xcassets in Resources */,
 				47AAEB7D2C41462C006F3583 /* Assets.xcassets in Resources */,
 			);
@@ -257,7 +279,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				477271822C417EDB0048E5B9 /* OnboardingView.swift in Sources */,
+				477271842C4180DB0048E5B9 /* GetStartedView.swift in Sources */,
 				47AAEB792C414628006F3583 /* MedcareApp.swift in Sources */,
+				4772718E2C41A10F0048E5B9 /* RegisterView.swift in Sources */,
+				4772718C2C41A0EB0048E5B9 /* LoginView.swift in Sources */,
 				47AAEBA32C414673006F3583 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +451,7 @@
 				DEVELOPMENT_TEAM = 2CKV7L58WX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Medcare/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +481,7 @@
 				DEVELOPMENT_TEAM = 2CKV7L58WX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Medcare/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

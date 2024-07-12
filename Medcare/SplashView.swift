@@ -11,7 +11,7 @@ struct SplashView: View {
     @State private var isActive = false
     var body: some View {
         if isActive {
-            Text("Hello world")
+            OnboardingView()
         }else {
             ZStack {
                 Color("SplashColor")
