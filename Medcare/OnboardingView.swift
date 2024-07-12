@@ -15,7 +15,7 @@ private let onboardingSteps = [
 struct OnboardingView: View {
     @State private var currentStep = 0
     @State private var animate = false
-
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -40,22 +40,23 @@ struct OnboardingView: View {
                 HStack {
                     ForEach(0..<onboardingSteps.count) { index in
                         if index == currentStep {
-                            Rectangle()
-                                .frame(width: 20, height: 10)
-                                .cornerRadius(10)
-                                .foregroundColor(.purple)
+                            Circle()
+                                .frame(width: 8, height: 8)
+                                .cornerRadius(8)
+                                .foregroundColor(Color("PrimaryColor"))
                                 .transition(.scale)
                                 .animation(.easeInOut(duration: 0.3), value: currentStep)
                         } else {
                             Circle()
-                                .frame(width: 10, height: 10)
-                                .foregroundColor(.gray)
+                                .frame(width: 8, height: 8)
+                                .cornerRadius(8)
+                                .foregroundColor(Color("ThirdColor"))
                                 .transition(.scale)
                                 .animation(.easeInOut(duration: 0.3), value: currentStep)
                         }
                     }
                 }
-                .padding(.top, 20)
+           
                 
                 if self.currentStep < onboardingSteps.count - 1 {
                     Button(action: {
@@ -63,29 +64,34 @@ struct OnboardingView: View {
                             self.currentStep += 1
                         }
                     }) {
+                        Spacer()
                         Text("Next")
                             .fontWeight(.bold)
                             .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color.blue)
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                            .padding(.horizontal, 40)
-                    }
-                    .padding(.bottom, 30)
-                    .animation(.easeInOut(duration: 0.5), value: currentStep)
+                        
+                        
+                        
+                        Spacer()
+                    }   .frame(maxWidth: .infinity)
+                        .background(Color("PrimaryColor"))
+                        .foregroundColor(.white)
+                    
+                        .cornerRadius(10)
+                        .padding(.bottom, 30)
+                        .animation(.easeInOut(duration: 0.5), value: currentStep)    .padding(.horizontal, 28).padding(.top,50)
                 } else {
                     NavigationLink(destination: GetStartedView()) {
                         Text("Start")
                             .fontWeight(.bold)
                             .padding()
                             .frame(maxWidth: .infinity)
-                            .background(Color.blue)
+                            .background(Color("PrimaryColor"))
                             .foregroundColor(.white)
                             .cornerRadius(10)
-                            .padding(.horizontal, 40)
+                            .padding(.horizontal, 28)
                     }
                     .padding(.bottom, 30)
+                    .padding(.top,50)
                     .animation(.easeInOut(duration: 0.5), value: currentStep)
                 }
             }
@@ -98,13 +104,14 @@ struct OnboardingPageView: View {
     var imageName: String
     var title: String
     var description: String
-
+    
     var body: some View {
         VStack {
             Image(imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 300)
+            Spacer().frame(height:30)
             Text(title)
                 .font(.title)
                 .fontWeight(.bold)
